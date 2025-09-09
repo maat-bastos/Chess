@@ -19,10 +19,10 @@ public class ChessGUI extends JFrame {
 
     // --- Config de cores/styles ---
     private static final Color LIGHT_SQ = new Color(240, 217, 181);
-    private static final Color DARK_SQ  = new Color(181, 136, 99);
-    private static final Color HILITE_SELECTED = new Color(50, 120, 220);
-    private static final Color HILITE_LEGAL    = new Color(20, 140, 60);
-    private static final Color HILITE_LASTMOVE = new Color(220, 170, 30);
+    private static final Color DARK_SQ  = new Color(0, 100, 0);
+    private static final Color HILITE_SELECTED = new Color(0, 0, 220);
+    private static final Color HILITE_LEGAL    = new Color(220, 0, 160);
+    private static final Color HILITE_LASTMOVE = new Color(220, 0, 230);
 
     private static final Border BORDER_SELECTED = new MatteBorder(3,3,3,3, HILITE_SELECTED);
     private static final Border BORDER_LEGAL    = new MatteBorder(3,3,3,3, HILITE_LEGAL);
@@ -72,7 +72,7 @@ public class ChessGUI extends JFrame {
 
         // Painel do tabuleiro (8x8)
         boardPanel = new JPanel(new GridLayout(8, 8, 0, 0));
-        boardPanel.setBackground(Color.DARK_GRAY);
+        boardPanel.setBackground(Color.blue);
         boardPanel.setBorder(BorderFactory.createEmptyBorder(6,6,6,6));
 
         // Cria botões das casas
